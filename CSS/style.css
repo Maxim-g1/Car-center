@@ -117,16 +117,18 @@ align-items: center;
 
 .hero {
     height: 100vh;
-    background: url(../img/bg/carred.png) no-repeat left top/cover;
+    background: url(../img/bg/carred.png) no-repeat center/cover;
     padding-top:272px ;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+    
 }
 
 .hero__main {
 flex: 1;
+position: 95px;
 }
 
 .tittle {
@@ -184,12 +186,15 @@ padding: 12px 17px;
 
 .advantage__img {
     margin-bottom: 14px;
+    width: 30px;
+    height: 30px;
 }
 
 .advantages{
     display: flex;
     justify-content: space-between;
-
+    padding: 0px 20px;
+column-gap: 24px;
 }
 
 body{
@@ -206,7 +211,7 @@ p{
 .hero_advantage{
    border: 2px solid #FFFFFF;
     flex: 0 1 276px;
-
+    
 }
 
 .hero_container{
@@ -226,17 +231,25 @@ p{
 .logo{
     max-width: 181px;
 }
+.header .location{
+    display: none;
+}
+.tittle{
+    font-size: 42px;
 }
 
-@media (max-width: 960px) {
-    .tittle{
-        font-size: 42px;
-    }
-
-    .hero_subtittle{
-        font-size: 22px;
-    }
+.hero_subtittle{
+    font-size: 22px;
 }
+.hero{
+padding-top: 210px;
+}
+.hero__main{
+    padding-left: 73px;
+}
+}
+
+
 
 @media (max-width: 768px) {
     .header .location{
@@ -245,7 +258,9 @@ p{
     .container{
         max-width: 722px;
     }
-
+.header{
+    z-index: 10;
+}
     .nav{
         display: none;
     }
@@ -255,18 +270,59 @@ p{
      .logo{
         max-width: 142px;
      }
+
+     .hero{
+        padding-top: 170px;
+        position: relative;
+     }
+     .advantage{
+        font-size: 14px;
+     }
+     .advantage__img {
+        margin-bottom: 11px;
+        width: 24px;
+        height: 24px;
+    }
+    .hero::before{
+        content:"" ;
+        display: block;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 19.11%);
+    }
 }
 
 @media (max-width: 320px) {
-    .header .location{
-        display: none;
-    }
     .container{
         max-width: 300px;
     }
      .logo{
         max-width: 81px;
      }
+    .hero{
+        padding-top: 120px;
+    }
+
+    .hero__main{
+        padding-left: 0px;
+    }
+    .tittle{
+        font-size: 25px;
+    }
+    .hero .tittle{
+        margin-bottom: 5px;
+    }
+    .hero_subtittle{
+        font-size: 14px;
+        margin-bottom: 33px;
+    }
+    .hero__btn{
+flex-wrap: wrap;
+row-gap: 14px;
+    }
+    .btn{
+        font-size: 12px;
+        padding: 8px 12px;
+    }
 }
 
 
