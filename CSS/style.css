@@ -55,7 +55,7 @@ h6 {
 
 .container {
     max-width: 1130px;
-    padding: 0px 5px;
+    padding: 5px;
     margin: 0 auto;
 }
 
@@ -253,6 +253,129 @@ p {
     bottom: 0;
     right: 0;
     width: 83%;
+}
+
+.about {
+    padding: 65px 0px 90px;
+}
+
+.section__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about__container {
+    max-width: 922px;
+}
+
+.section__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 54px;
+    line-height: 1.17;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section__title_color_grey {
+    color: rgba(231, 231, 231, 1);
+}
+
+.section__subtitle_color_white {
+    color: white;
+}
+
+.about .section__subtitle {
+    margin-bottom: 20px;
+}
+
+.about__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 51px;
+    counter-reset: item-count;
+}
+
+.about__item {
+    width: 48%;
+    position: relative;
+    padding: 70px 0px 0px 30px;
+}
+
+.about__text {
+    z-index: 10;
+    position: relative;
+}
+
+.about__item::before {
+    content: "0" counter(item-count);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1;
+    color: rgba(231, 231, 231, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    counter-increment: item-count;
+}
+
+.services {}
+
+.services__content {}
+
+.services__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.services__item {
+    width: 24%;
+    border: 2px solid #D5D5D5;
+    border-radius: 4px;
+
+}
+
+.services__img-wrap {}
+
+.services__img {}
+
+.services__text {
+    padding: 14px 62px 14px 62px;
+    text-align: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.services__link {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #252525;
+    border: 2px solid #D4D4D4;
+    border-radius: 4px;
+    padding: 12px 17px 12px 17px;
+}
+
+.services__link-block {
+    margin-top: 60px;
+    text-align: center;
 }
 
 @media (max-width: 960px) {
