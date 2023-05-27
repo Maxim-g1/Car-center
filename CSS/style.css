@@ -425,7 +425,7 @@ p {
     color: #252525;
     border: 2px solid #D4D4D4;
     border-radius: 4px;
-    padding: 12px 17px 12px 17px;
+    padding: 12px 12px 0px 12px;
 }
 
 .services__link-block {
@@ -492,7 +492,6 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
-flex-direction: column-reverse;
 }
 
 .order__foto {
@@ -536,40 +535,59 @@ flex-direction: column-reverse;
     color: white;
     border: white solid 2px;
     border-radius: 4px;
+    margin-bottom: 90px;
 }
 
-.carta{
+.carta {
     width: 100%;
     height: 224px;
-background: url(../img/bg/Carta.png) no-repeat center/cover;
+    background: url(../img/bg/Carta.png) no-repeat center/cover;
 }
 
 
 .footer {
     background-color: rgba(64, 64, 64, 1);
-  height: 100%;
-
+    height: 100%;
+    color: white;
 }
 
-.footer__list {
-    color: white;
+
+.footer__item {}
+
+.footer {}
+
+.footer__container {
+    display: flex;
+}
+
+.footer .logo-link {
+    margin-right: 8.8%;
+}
+
+.logo {}
+
+.footer__content {
     display: flex;
     justify-content: space-between;
-    column-gap: 75px;
+    flex: 1;
+    column-gap: 22px;
     margin-top: 22px;
-    height: 100%;
-    width: 100%;
-} 
-
-.footer__item {
-
+    margin-bottom: 22px;
 }
+
+.footer__column {}
+
+.location {}
+
+.footer__info-element {}
+
+.footer__contact {}
 
 @media (max-width: 960px) {
 
     .section__title {}
 
-    .location {
+    .header .location {
         display: none;
     }
 
@@ -738,19 +756,24 @@ background: url(../img/bg/Carta.png) no-repeat center/cover;
     .advantage__img path {
         fill: black;
     }
- 
-    .services__list{
-        flex-direction: column;
+
+    .services__list {
         height: 100%;
         width: 100%;
     }
 
-    .services__item{
+    .services__item {
         width: 48%;
         height: 24%;
     }
 
+    .services__item2 {
+        width: 48%;
+    }
 
+    .order__content {
+        flex-direction: column-reverse;
+    }
 
 }
 
