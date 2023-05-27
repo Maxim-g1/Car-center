@@ -378,6 +378,15 @@ p {
 
 }
 
+.services__list2 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+
+}
+
 .services__item {
     width: 24%;
     border: 2px solid #D5D5D5;
@@ -385,7 +394,8 @@ p {
 }
 
 .services__item2 {
-    border: none;
+    width: 24%;
+    border-radius: 4px;
 }
 
 .services__img-wrap {}
@@ -450,7 +460,7 @@ p {
 }
 
 .order {
-    height: 500px;
+    height: 100%;
     background: url(../img/bg/pomechenie.png) no-repeat center/cover;
     position: relative;
 }
@@ -468,16 +478,21 @@ p {
 .order__container {
     position: relative;
     z-index: 10;
+    width: 100%;
 }
 
-.order__text {
+.order__title {
     color: white;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 62px;
 }
 
 .order__content {
     display: flex;
     justify-content: space-between;
     width: 100%;
+flex-direction: column-reverse;
 }
 
 .order__foto {
@@ -521,6 +536,33 @@ p {
     color: white;
     border: white solid 2px;
     border-radius: 4px;
+}
+
+.carta{
+    width: 100%;
+    height: 224px;
+background: url(../img/bg/Carta.png) no-repeat center/cover;
+}
+
+
+.footer {
+    background-color: rgba(64, 64, 64, 1);
+  height: 100%;
+
+}
+
+.footer__list {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 75px;
+    margin-top: 22px;
+    height: 100%;
+    width: 100%;
+} 
+
+.footer__item {
+
 }
 
 @media (max-width: 960px) {
@@ -696,6 +738,20 @@ p {
     .advantage__img path {
         fill: black;
     }
+ 
+    .services__list{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .services__item{
+        width: 48%;
+        height: 24%;
+    }
+
+
+
 }
 
 @media (max-width: 320px) {
